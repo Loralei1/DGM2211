@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: dc36d74e92bb8d04ea4e93c783a0a024
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BaseControl
+    100002: BaseGroup
+    100004: BaseHR
+    100006: BaseHRControl
+    100008: BaseHRGroup
+    100010: BaseTwo
+    100012: BaseTwo1
+    100014: head
+    100016: head 1
+    100018: head 2
+    100020: HeadGroup
+    100022: HeadGroup 1
+    100024: HeadGroupControl
+    100026: HeadRoot
+    100028: HeadRootGroup
+    100030: HeadTwo
+    100032: //RootNode
+    100034: Lower_Arm
+    100036: LowerArmControl
+    100038: LowerArmgourp
+    100040: LowerArmHR
+    100042: LowerArmHRControl
+    100044: LowerArmHRGroup
+    100046: LowerArmTwo
+    100048: LowerArmTwo 1
+    100050: null1
+    100052: pCube1
+    100054: pCube2
+    100056: pCube3
+    100058: pCube4
+    100060: pCylinder1
+    100062: polySurface3
+    100064: Root
+    100066: transform1
+    100068: transform2
+    100070: transform3
+    100072: upper_arm
+    100074: UpperArmControl
+    100076: UpperArmGroup
+    100078: UpperArmHR
+    100080: UpperArmHRControl
+    100082: UpperArmHRGroup
+    100084: UpperArmTwo1
+    100086: UpperArmTwo1 1
+    400000: BaseControl
+    400002: BaseGroup
+    400004: BaseHR
+    400006: BaseHRControl
+    400008: BaseHRGroup
+    400010: BaseTwo
+    400012: BaseTwo1
+    400014: head
+    400016: head 1
+    400018: head 2
+    400020: HeadGroup
+    400022: HeadGroup 1
+    400024: HeadGroupControl
+    400026: HeadRoot
+    400028: HeadRootGroup
+    400030: HeadTwo
+    400032: //RootNode
+    400034: Lower_Arm
+    400036: LowerArmControl
+    400038: LowerArmgourp
+    400040: LowerArmHR
+    400042: LowerArmHRControl
+    400044: LowerArmHRGroup
+    400046: LowerArmTwo
+    400048: LowerArmTwo 1
+    400050: null1
+    400052: pCube1
+    400054: pCube2
+    400056: pCube3
+    400058: pCube4
+    400060: pCylinder1
+    400062: polySurface3
+    400064: Root
+    400066: transform1
+    400068: transform2
+    400070: transform3
+    400072: upper_arm
+    400074: UpperArmControl
+    400076: UpperArmGroup
+    400078: UpperArmHR
+    400080: UpperArmHRControl
+    400082: UpperArmHRGroup
+    400084: UpperArmTwo1
+    400086: UpperArmTwo1 1
+    2100000: lambert1
+    2300000: BaseTwo
+    2300002: BaseTwo1
+    2300004: head
+    2300006: head 1
+    2300008: LowerArmTwo
+    2300010: LowerArmTwo 1
+    2300012: pCube3
+    2300014: pCube4
+    2300016: polySurface3
+    2300018: UpperArmTwo1
+    2300020: UpperArmTwo1 1
+    3300000: BaseTwo
+    3300002: BaseTwo1
+    3300004: head
+    3300006: head 1
+    3300008: LowerArmTwo
+    3300010: LowerArmTwo 1
+    3300012: pCube3
+    3300014: pCube4
+    3300016: polySurface3
+    3300018: UpperArmTwo1
+    3300020: UpperArmTwo1 1
+    4300000: BaseTwo
+    4300002: LowerArmTwo
+    4300004: UpperArmTwo1
+    4300006: head
+    4300008: polySurface3
+    4300010: BaseTwo1
+    4300012: LowerArmTwo
+    4300014: UpperArmTwo1
+    4300016: head
+    4300018: pCube3
+    4300020: pCube4
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
