@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: lamprig.ma
-//Last modified: Tue, Feb 19, 2019 12:23:38 AM
+//Last modified: Tue, Feb 19, 2019 12:25:41 AM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "03A19630-4BA2-B38C-2F2F-23AA5800C3C0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.9585179411594638 9.652179160550455 -47.023300516330131 ;
-	setAttr ".r" -type "double3" -8.7383527273752613 182.5999999997928 0 ;
+	setAttr ".t" -type "double3" -6.4540850284936644 20.696975140312851 -85.968110986369794 ;
+	setAttr ".r" -type "double3" -11.738352727376043 180.59999999978885 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1EDA79E3-49A5-DC34-F496-5384E7B625EF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 55.434278989557271;
+	setAttr ".coi" 95.685448978614843;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2133,7 +2133,7 @@ createNode parentConstraint -n "polySurface2_parentConstraint1" -p "|BaseTwo|Low
 		-3.1086244689504383e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -1.3227955862084725e-13 1.3639103674164624e-14 
 		-27.898224977900728 ;
-	setAttr ".lr" -type "double3" -0.0010434699289920595 0.0027512632856931379 38.585844216286311 ;
+	setAttr ".lr" -type "double3" 1.3219180394832741e-13 -1.3914926731402878e-14 -7.4730610972668334e-15 ;
 	setAttr ".rst" -type "double3" -1.3877787807814457e-16 0 0 ;
 	setAttr ".rsrr" -type "double3" 1.3258937328351035e-13 -1.4213103732790083e-14 -7.4761671076979515e-15 ;
 	setAttr -k on ".w0";
@@ -2173,7 +2173,7 @@ createNode parentConstraint -n "UpperArmTwo1_parentConstraint1" -p "|BaseTwo|Low
 	setAttr ".tg[0].tot" -type "double3" 1.1102230246251565e-15 -1.1102230246251565e-15 
 		1.3322676295501878e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 1.915022952504319 -1.1648600637371982 -58.70013444177539 ;
-	setAttr ".lr" -type "double3" 0.016586951794041467 -0.065409364524617708 -90.143241562733294 ;
+	setAttr ".lr" -type "double3" -6.4605016967227689e-16 -3.4787316828507215e-16 -6.7943978180677951e-19 ;
 	setAttr ".rst" -type "double3" 2.2204460492503131e-16 -4.4408920985006262e-16 8.8817841970012523e-16 ;
 	setAttr ".rsrr" -type "double3" -6.4605016967227689e-16 -3.4787316828507215e-16 
 		-6.7943978180677951e-19 ;
@@ -2214,7 +2214,7 @@ createNode parentConstraint -n "LowerArmTwo_parentConstraint1" -p "|BaseTwo|Lowe
 	setAttr ".tg[0].tot" -type "double3" -1.1102230246251565e-16 8.3266726846886741e-17 
 		8.8817841970012523e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0.31852440092665057 0.27797204068222969 -131.11037037208851 ;
-	setAttr ".lr" -type "double3" 0.0032130490399980508 0.0058519418626003412 28.060961292297861 ;
+	setAttr ".lr" -type "double3" -7.9513867036587939e-16 7.9513867036587919e-16 -6.3611093629270335e-15 ;
 	setAttr ".rst" -type "double3" 8.1699077635213768e-18 0 8.8817841970012523e-16 ;
 	setAttr ".rsrr" -type "double3" -7.9513867036587939e-16 7.9513867036587919e-16 -6.3611093629270335e-15 ;
 	setAttr -k on ".w0";
@@ -2326,7 +2326,7 @@ createNode parentConstraint -n "head_parentConstraint1" -p "|Root|Lower_Arm|uppe
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 -2.2204460492503131e-16 
 		1.7763568394002505e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 0.41156818143979451 0.09662942612056985 -103.21257100583172 ;
-	setAttr ".lr" -type "double3" 0.00036512480629618453 0.0029197539341146743 38.585844250642545 ;
+	setAttr ".lr" -type "double3" -9.9392333795734825e-17 4.2241741863187339e-16 2.5450649472570373e-14 ;
 	setAttr ".rst" -type "double3" 1.846121353438126 -4.4408920985006262e-16 0 ;
 	setAttr ".rsrr" -type "double3" -1.9878466759146975e-16 3.9756933518293969e-16 2.5452202477785932e-14 ;
 	setAttr -k on ".w0";
@@ -2366,7 +2366,6 @@ createNode parentConstraint -n "upper_arm_parentConstraint1" -p "upper_arm";
 	setAttr ".tg[0].tot" -type "double3" 4.4408920985006262e-16 2.2204460492503131e-16 
 		8.8817841970012523e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0.40331227309087397 2.113692910699867 -72.415153628172789 ;
-	setAttr ".lr" -type "double3" 2.1957146069846152 2.1971861798087464 -90.059134918000623 ;
 	setAttr ".rst" -type "double3" 1.6968262299208359 -1.3877787807814457e-16 4.4408920985006262e-16 ;
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "upper_arm_scaleConstraint1" -p "upper_arm";
@@ -2406,7 +2405,7 @@ createNode parentConstraint -n "Lower_Arm_parentConstraint1" -p "Lower_Arm";
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" 1.4312496066585827e-14 -3.1805546814635168e-15 
 		-8.1501713712502619e-15 ;
-	setAttr ".lr" -type "double3" -0.19657281535503207 0.043426072807963213 28.060179776070076 ;
+	setAttr ".lr" -type "double3" -1.3517357396219947e-14 6.0967080741817815e-31 5.1684013573782151e-15 ;
 	setAttr ".rst" -type "double3" 0.34662467317442652 1.0028329220703871e-17 4.4408920985006262e-16 ;
 	setAttr ".rsrr" -type "double3" -1.3517357396219947e-14 6.0967080741817815e-31 5.1684013573782151e-15 ;
 	setAttr -k on ".w0";
@@ -5248,15 +5247,15 @@ createNode mesh -n "pCubeShape3" -p "pCube3";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.25 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -6.4000726 0 0 3.4631975 
-		0 0 -6.4000726 0 0 3.4631975 0 0 -6.4000726 0 0 3.4631975 0 0 -6.4000726 0 0 3.4631975 
-		0 0;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -6.4000726 -13.952925 0 3.4631975 
+		-13.952925 0 -6.4000726 0 0 3.4631975 0 0 -6.4000726 0 0 3.4631975 0 0 -6.4000726 
+		-13.952925 0 3.4631975 -13.952925 0;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube4";
 	rename -uid "A430E6C6-4D15-4415-5B73-92BDF0EB0DD1";
@@ -5342,7 +5341,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "CE5B8565-4FB4-6E99-2D70-8BB13DE2F856";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 299 -ast 1 -aet 299 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 256 -ast 1 -aet 299 ";
 	setAttr ".st" 6;
 createNode groupId -n "groupId14";
 	rename -uid "4BF6D239-4950-6DDD-0350-43B7F1F980FC";
@@ -7157,8 +7156,8 @@ createNode displayLayer -n "layer2";
 	setAttr ".v" no;
 	setAttr ".do" 3;
 select -ne :time1;
-	setAttr ".o" 34;
-	setAttr ".unw" 34;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
