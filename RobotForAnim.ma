@@ -1,11 +1,12 @@
 //Maya ASCII 2018 scene
-//Name: SecondRobotRig.ma
-//Last modified: Tue, Apr 02, 2019 03:33:03 PM
+//Name: RobotForAnim.ma
+//Last modified: Tue, Apr 02, 2019 03:32:56 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
+fileInfo "exportedFrom" "C:/Users/10845064/Documents/GitRepos/DGM2211/SecondRobotRig.ma";
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2018";
 fileInfo "version" "2018";
@@ -58663,4 +58664,4 @@ connectAttr "white_shader.msg" ":defaultShaderList1.s" -na;
 connectAttr "rust_shader.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
-// End of SecondRobotRig.ma
+// End of RobotForAnim.ma
