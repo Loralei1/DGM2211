@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Eland.ma
-//Last modified: Tue, Jun 25, 2019 10:04:52 AM
+//Last modified: Sun, Jun 30, 2019 08:05:22 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3BB54147-4165-80E8-7436-30B71F7D1025";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 13.676416998846571 2.1998157191085621 5.7656587081748087 ;
-	setAttr ".r" -type "double3" 0.86164727042949329 81.399999999984431 -3.3233726390902069e-16 ;
+	setAttr ".t" -type "double3" 21.255250233123846 4.68578746461547 14.112093373295 ;
+	setAttr ".r" -type "double3" -4.5383527295822583 66.599999999981947 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9170B6BC-40A3-7535-B5C2-3F80D9C53D0C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.20577214917796;
+	setAttr ".coi" 27.957712995779918;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -207,19 +207,19 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".pt[739]" -type "float3" -0.0040167961 -6.3660984e-05 -0.0053325896 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5FFB5B69-4C60-279A-7070-239B536C6E16";
+	rename -uid "21E0A03B-4712-FC0F-2807-D59193940384";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C8EAAD81-4B56-BA9F-7CF7-0A8024D57280";
+	rename -uid "1F1D5DD8-45C2-9DC9-8108-5C937C1C80B0";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C292AC1E-4E9A-2AFB-E45D-B7B11BE9516E";
+	rename -uid "347B6D1C-4A16-4908-8D5A-14B675D64129";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "63EB83B4-4066-ABE7-CE48-FC81E80D18DB";
+	rename -uid "6E44FC3F-4925-24D5-9C9F-139FE64F23E3";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "08AF656C-45FC-7A9E-4790-318B075D4B9F";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "ACB9308A-45CD-789D-1591-FF99580D27A8";
+	rename -uid "E48C9EE7-45AC-0DB9-E257-AEA4A60D75C4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "DEF12F33-4E0B-F547-AD4A-1CB25D0946ED";
 	setAttr ".g" yes;
@@ -1905,6 +1905,8 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "polySplitRing48.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
